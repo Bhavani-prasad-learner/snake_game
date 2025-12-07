@@ -28,7 +28,7 @@ html{
     height: 100%;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 16px;
-    background-color: var(--primary-background-color);
+    background: linear-gradient(to right, #ff7e5f, #feb47b);
     color: var(--primary-font-color);
    
 } 
@@ -45,6 +45,7 @@ main{
 .infos{
     display: flex;
     justify-content: space-between;
+    color: black;
     
 }
 
@@ -57,6 +58,7 @@ main{
     grid-template-columns: repeat(auto-fill, minmax(30px, 1fr));
     grid-template-rows: repeat(auto-fill,minmax(30px, 1fr));
     gap: 0;
+    background: linear-gradient(135deg, #ffffff, #f2f2f2);
 
 }
 
@@ -86,13 +88,19 @@ main{
 }
 
 .fill{
-    background-color: var(--primary-fill-color);
+    background: repeating-linear-gradient(
+     135deg,
+    #b4ffb4,
+    #b4ffb4 10px,
+    #a0eaa0 10px,
+    #a0eaa0 20px
+  );
 }
 
 .head{
     
      background-image: url("snakw.png"); 
-    background-size: cover; /* or contain */
+    background-size: contain; /* or contain */
     background-position: center;
     border-radius: 50%;
 }
@@ -113,13 +121,15 @@ main{
     height: 100vh;
     width: 100vw;
     background-color: var(--primary-modal-background-color);
-    backdrop-filter: blur(4px);
+    backdrop-filter: blur(6px);
     position: fixed;
     top: 0;
     left: 0;
     display: flex;
     justify-content: center;
     align-items: center;
+    color: rgb(47, 17, 55);
+    
 }
   
 .start-game , .game-over{
